@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: calc(100vw - 200px);
+  height: 100px;
+  background-color: grey;
+  margin-left: 200px;
+}
+
+.left-menu{
+  width: 200px;
+  height: calc(100vh - 100px);
+  background-color: black;
+  position: absolute;
+}
+
+
+main{
+  width: calc(100vw - 200px);
+  height: calc(100vh - 200px);
+  background-color: green;
+  margin-left: 200px;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: pink;
+}
