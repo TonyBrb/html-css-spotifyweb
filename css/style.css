@@ -4,32 +4,125 @@
   box-sizing: border-box;
 }
 
-header{
-  width: calc(100vw - 200px);
-  height: 100px;
-  background-color: grey;
-  margin-left: 200px;
+body{
+  font-family: Montserrat;
 }
 
 .left-menu{
   width: 200px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   background-color: black;
   position: absolute;
 }
 
 
+
+
+header{
+  width: calc(100vw - 200px);
+  height: 80px;
+  background-color: rgba(0, 0, 0, .5);
+  margin-left: 200px;
+  position: fixed;
+}
+
+.button{
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  padding: 10px 25px;
+  border: white solid 2px;
+  border-radius: 30px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+
+
 main{
   width: calc(100vw - 200px);
-  height: calc(100vh - 200px);
-  background-color: green;
+  height: calc(100vh - 80px);
+  background-color: #141922;
   margin-left: 200px;
+  color: white;
+  overflow: auto;
+}
+
+.nav-bar{
+  width: 523px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  color: #7F8185;
+  float: left;
+  margin: 5px;
+}
+
+.container{
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 0 20px;
+}
+
+.container h1{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.container h2{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.container h5{
+  font-size: 11px;
+  color: grey;
+}
+
+.contenitore{
+  width: 15%;
+  margin-right: 1%;
+  text-align: center;
+}
+
+.box-container{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.box img{
+  width: 100%;
+}
+
+.box.circle{
+  height: 13vw;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url("../img/einaudi.jpeg");
 }
 
 
 
 footer{
   width: 100%;
-  height: 100px;
-  background-color: pink;
+  height: 80px;
+  background-color: #282828;
 }
