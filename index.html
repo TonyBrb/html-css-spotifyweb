@@ -11,54 +11,59 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+    integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Spotify</title>
 </head>
 <body>
-  <div class="left-menu">
-    <div class="logo">
-      <img src="img/logo.svg" alt="">
-    </div>
-    <div class="menu-options">Home</div>
-    <div class="menu-options">Cerca</div>
-    <div class="menu-options">La tua libreria</div>
-    <div class="menu-options">PLAYLIST</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Nome playlist</div>
-    <div class="menu-options">Install app</div>
-    <div class="menu-options">John Doe</div>
-  </div>
- 
- 
-  <header>
+
+  <header class="clearfix">
     <div class="button">EFFETTUA L'UPGRADE</div>
   </header>
-  
-  <main>
-    <div class="nav-bar">
-      <ul>
-        <li>IN EVIDENZA</li>
-        <li>PODCAST</li>
-        <li>CLASSIFICHE</li>
-        <li>GENERI E MOOD</li>
-        <li>NUOVE USCITE</li>
-        <li>SCOPRI</li>
-      </ul>
-    </div>
+
+  <div class="containerr clearfix">
+    <aside>
+      <div class="logo">
+        <img src="img/logo.svg" alt="">
+      </div>
+      <div class="menu-options">Home</div>
+      <div class="menu-options">Cerca</div>
+      <div class="menu-options">La tua libreria</div>
+      <div class="menu-options">PLAYLIST</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Nome playlist</div>
+      <div class="menu-options">Install app</div>
+      <div class="menu-options">John Doe</div>
+    </aside>
     
-    <div class="container">
-      <h1>Recently played</h1>
-      <div class="box-container">
-        <div class="contenitore">
-          <div class="box">
-            <img src="img/metal_lifting.jpg" alt="">
+    <main>
+      <div class="nav-bar clearfix">
+        <ul>
+          <li>IN EVIDENZA</li>
+          <li>PODCAST</li>
+          <li>CLASSIFICHE</li>
+          <li>GENERI E MOOD</li>
+          <li>NUOVE USCITE</li>
+          <li>SCOPRI</li>
+        </ul>
+      </div>
+      
+      <div class="container">
+        <h1>Recently played</h1>
+        <div class="box-container">
+          <div class="contenitore">
+            <div class="box">
+              <img src="img/metal_lifting.jpg" alt="">
+            </div>
+            <h2>Title</h2>
+            <h5>Subtitle</h5>
           </div>
-          <h2>Title</h2>
-          <h5>Subtitle</h5>
-        </div>
           <div class="contenitore">
             <div class="box">
               <img src="img/stranger.jpeg" alt="">
@@ -94,50 +99,90 @@
             <h2>Title</h2>
             <h5>Subtitle</h5>
           </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <h1>Creato per John Doe</h1>
-      <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-      <div class="box-container">
-        <div class="contenitore">
-          <div class="box">
-            <img src="img/metal_lifting.jpg" alt="">
-          </div>
-          <h2>Realise Radar</h2>
-        </div>
-        <div class="contenitore">
-          <div class="box">
-            <img src="img/stranger.jpeg" alt="">
-          </div>
-          <h2>Daily Mix</h2>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1>Artisti più pololari</h1>
-      <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-      <div class="box-container">
-        <div class="contenitore">
-          <div class="box circle">
+      
+      <div class="container">
+        <h1>Creato per John Doe</h1>
+        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+        <div class="box-container">
+          <div class="contenitore">
+            <div class="box">
+              <img src="img/metal_lifting.jpg" alt="">
+            </div>
+            <h2>Realise Radar</h2>
           </div>
-          <h2>Realise Radar</h2>
-        </div>
-        <div class="contenitore">
-          <div class="box circle">
-            <img src="" alt="">
+          <div class="contenitore">
+            <div class="box">
+              <img src="img/stranger.jpeg" alt="">
+            </div>
+            <h2>Daily Mix</h2>
           </div>
-          <h2>Daily Mix</h2>
         </div>
       </div>
+      
+      <div class="container">
+        <h1>Artisti più pololari</h1>
+        <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+        <div class="box-container">
+          <div class="contenitore">
+            <div class="box circle">
+            </div>
+            <h2>Realise Radar</h2>
+          </div>
+          <div class="contenitore">
+            <div class="box circle">
+              <img src="" alt="">
+            </div>
+            <h2>Daily Mix</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="left clearfix">
+      <div class="photo-track">
+        <img src="img/stranger.jpeg" alt="">
+      </div>
+      <div class="canzone">
+        <div class="artista">Artista</div>
+        <div class="titolo">Titolo</div>
+      </div>
+        
+        <div class="heart"><i class="far fa-heart"></i></div>
+        <div class="directory"><i class="far fa-folder"></i></div>
+      </div>
+      
     </div>
-    
+    <div class="centre">
+      <div class="centre-container">
+        <div class="random"><i class="fas fa-random"></i></div>
+        <div class="stepbackword"><i class="fas fa-step-backward"></i></div>
+        <div class="play"><i class="far fa-play-circle"></i></div>
+        <div class="stepforword"><i class="fas fa-step-forward"></i></div>
+        <div class="update"><i class="fas fa-undo-alt"></i></div>
+      </div>
+      
+      <div class="centre-container down">
+        <div class="min-corrente">0:25</div>
+        <div class="barra">
+          <div></div>
+        </div>
+        <div class="min-totali">4:05</div>
+      </div>
 
-  </main>
-
-  <footer></footer>
+    </div>
+    <div class="right">
+      <div class="line"><i class="fas fa-list-ul"></i></div>
+      <div class="pc"><i class="fas fa-desktop"></i></div>
+      <div class="audio"><i class="fas fa-volume-up"></i></div>
+      <div class="barra volume">
+        <div></div>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>

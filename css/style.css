@@ -7,18 +7,16 @@
 body{
   font-family: Montserrat;
 }
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
  
 /* LEFT MENU */
 
-.left-menu{
-  width: 200px;
-  height: calc(100vh - 80px);
-  background-color: black;
-  position: absolute;
-  color: grey;
-  font-weight: bold;
-  font-size: 12px;
-}
+
 
 .logo{
   width: 70%;
@@ -71,16 +69,35 @@ header{
   margin-right: 10px;
 }
 
-/* MAIN  */
+.containerr{
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+aside, main{
+  float: left;
+}
+
+aside{
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  color: grey;
+  font-weight: bold;
+  font-size: 12px;
+  overflow: hidden;
+}
 
 main{
-  width: calc(100vw - 200px);
-  height: calc(100vh - 80px);
-  background-color: #141922;
-  margin-left: 200px;
-  color: white;
+  width: calc(100% - 200px);
+  height: 100%;
   overflow: auto;
+  background-color: #141922;
+  color: white;
 }
+
+/* MAIN */
+
 
 .nav-bar{
   width: 523px;
@@ -103,7 +120,7 @@ ul li{
 
 .container{
   display: inline-block;
-  width: 100%;
+  width: 90%;
   margin: 20px 0 0 20px;
 }
 
@@ -145,7 +162,8 @@ ul li{
 }
 
 .box.circle{
-  height: 13vw;
+  width: 100%;
+  height: 22vh;
   border-radius: 50%;
   background-size: contain;
   background-image: url("../img/einaudi.jpeg");
@@ -153,8 +171,133 @@ ul li{
 
 
 
+/* FOOTER  */
+
 footer{
   width: 100%;
   height: 80px;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  width: 220px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo-track{
+  display: inline-block;
+  width: 40px;
+  /* float: left; */
+  /* margin: 20px 0 0 10px; */
+}
+
+.photo-track img{
+  width: 100%;
+  background-size: contain;
+}
+
+.canzone{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  /* margin-left: 5px; */
+  /* float: left; */
+  bottom: 10px;
+}
+
+.song{
+  /* float: left; */
+  margin-top: 25px;
+  /* margin-left: 8px; */
+}
+
+.artista{
+  color: white;
+}
+
+.titolo{
+  color: grey;
+}
+
+.heart{
+  display: inline-block;
+  /* float: left; */
+  /* margin-top: 25px; */
+  /* margin-left: 45px; */
+  font-size: 20px;
+  color: grey;
+}
+
+.directory{
+  display: inline-block;
+  /* float: left; */
+  /* margin-top: 25px; */
+  /* margin-left: 10px; */
+  font-size: 20px;
+  color: grey;
+}
+
+
+.centre{
+  width: 40%;
+  height: 100%;
+}
+
+.centre-container{
+  width: 40%;
+  height: 50%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.play{
+  font-size: 30px;
+}
+
+.centre-container.down{
+  width: 100%;
+  justify-content: space-between;
+}
+
+.min-corrente, .min-totali{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.barra{
+  width: 80%;
+  height: 4px;
+  border-radius: 12px;
+  background-color: grey;
+}
+
+.barra div{
+  width: 20%;
+  height: 4px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.barra.volume{
+  width: 60%;
+}
+
+.right{
+  width: 200px;
+  height: 100%;
+  color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 12px;
 }
