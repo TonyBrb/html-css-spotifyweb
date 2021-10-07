@@ -112,6 +112,7 @@ header{
   background-color: rgba(0, 0, 0, .5);
   margin-left: 200px;
   position: fixed;
+  z-index: 999;
 }
 
 .button{
@@ -451,23 +452,30 @@ footer{
 
 /* PARTE RESPONSIVE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .contenitore{
-    width: 40%;
+    width: 24%;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .contenitore{
+    width: 49%;
+  }
 }
 
-@media screen and (max-width: 576px) {
+
+
+@media screen and (max-width: 575px) {
   aside{
-    width: 35px;
+    width: 36px;
   }
   main{
-    width: calc(100% - 35px);
+    width: calc(100% - 36px);
   }
 
   header{
-  width: calc(100vw - 35px);
+  width: calc(100vw - 36px);
   margin-left: 35px;
 }
 
@@ -494,6 +502,10 @@ footer{
   color: lightgrey;
   font-size: 15px;
   margin: 5px auto;
+}
+
+.contenitore{
+  width: 49%;
 }
 
 }
