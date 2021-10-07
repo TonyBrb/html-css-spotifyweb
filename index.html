@@ -28,24 +28,36 @@
       <div class="logo">
         <img src="img/logo.svg" alt="">
       </div>
-      <div class="menu-options">Home</div>
-      <div class="menu-options">Cerca</div>
-      <div class="menu-options">La tua libreria</div>
-      <div class="menu-options">PLAYLIST</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Nome playlist</div>
-      <div class="menu-options">Install app</div>
-      <div class="menu-options">John Doe</div>
+      <div class="home"><i class="fas fa-home"></i></div>
+      <div class="search"><i class="fas fa-search"></i></div> 
+      <div class="playlist">II\</div>
+      <div class="menu-up">
+        <div class="menu-options"><i class="fas fa-home"></i> Home</div>
+        <div class="menu-options"><i class="fas fa-search"></i> Cerca</div>
+        <div class="menu-options">II\ La tua libreria</div>
+      </div>
+      <div class="menu-down">
+        <div class="menu-options">PLAYLIST</div>
+        <div class="menu-options"><i class="fas fa-plus-square"></i> Crea Playlist</div>
+        <div class="menu-options">Nome playlist</div>
+        <div class="menu-options">Nome playlist</div>
+        <div class="menu-options">Nome playlist</div>
+        <div class="menu-options">Nome playlist</div>
+        <div class="menu-options">Nome playlist</div>
+        <div class="menu-options">Nome playlist</div>
+      </div>
+      <div class="info">
+        <div class="menu-options"><i class="fas fa-arrow-circle-down"></i> Install app</div>
+        <div class="menu-options"><i class="fas fa-user-circle"></i> John Doe</div>
+      </div>
+      
     </aside>
+    
     
     <main>
       <div class="nav-bar clearfix">
         <ul>
-          <li>IN EVIDENZA</li>
+          <li class="active">IN EVIDENZA</li>
           <li>PODCAST</li>
           <li>CLASSIFICHE</li>
           <li>GENERI E MOOD</li>
@@ -59,44 +71,62 @@
         <div class="box-container">
           <div class="contenitore">
             <div class="box">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
               <img src="img/metal_lifting.jpg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>Heavy Metal</h2>
             <h5>Subtitle</h5>
           </div>
           <div class="contenitore">
             <div class="box">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
               <img src="img/stranger.jpeg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h2>
             <h5>Subtitle</h5>
           </div>
           <div class="contenitore">
             <div class="box">
-              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/aquietplace.jpeg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>A Quiet Place</h2>
             <h5>Subtitle</h5>
           </div>
           <div class="contenitore">
             <div class="box">
-              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/split.jpeg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>Split</h2>
             <h5>Subtitle</h5>
           </div>
           <div class="contenitore">
             <div class="box">
-              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/cure.jpeg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>A Cure For Wellness</h2>
             <h5>Subtitle</h5>
           </div>
           <div class="contenitore">
             <div class="box">
-              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/sinister.jpeg" alt="">
             </div>
-            <h2>Title</h2>
+            <h2>Sinister</h2>
             <h5>Subtitle</h5>
           </div>
         </div>
@@ -108,13 +138,19 @@
         <div class="box-container">
           <div class="contenitore">
             <div class="box">
-              <img src="img/metal_lifting.jpg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/radar.jpeg" alt="">
             </div>
             <h2>Realise Radar</h2>
           </div>
           <div class="contenitore">
             <div class="box">
-              <img src="img/stranger.jpeg" alt="">
+              <div class="play-hover">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <img src="img/mixdaily.jpeg" alt="">
             </div>
             <h2>Daily Mix</h2>
           </div>
@@ -126,15 +162,16 @@
         <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
         <div class="box-container">
           <div class="contenitore">
-            <div class="box circle">
+            <div class="box circle one">
+              <img src="img/youg.jpeg" alt="">
             </div>
-            <h2>Realise Radar</h2>
+            <h2>Lana Del Rey</h2>
           </div>
           <div class="contenitore">
             <div class="box circle">
-              <img src="" alt="">
+              <img src="img/einaudi.jpeg" alt="">
             </div>
-            <h2>Daily Mix</h2>
+            <h2>Ludovico Einaudi</h2>
           </div>
         </div>
       </div>
@@ -168,7 +205,7 @@
       <div class="centre-container down">
         <div class="min-corrente">0:25</div>
         <div class="barra">
-          <div></div>
+          <div></div> <div class="pallino"></div>
         </div>
         <div class="min-totali">4:05</div>
       </div>
@@ -179,7 +216,7 @@
       <div class="pc"><i class="fas fa-desktop"></i></div>
       <div class="audio"><i class="fas fa-volume-up"></i></div>
       <div class="barra volume">
-        <div></div>
+        <div></div> <div class="pallino"></div>
       </div>
     </div>
   </footer>
