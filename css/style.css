@@ -23,6 +23,8 @@ aside{
   font-weight: bold;
   font-size: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo{
@@ -47,7 +49,6 @@ aside{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 140px;
 }
 
 .info .menu-options:first-child{
@@ -74,7 +75,12 @@ aside .menu-options:first-child{
 }
 
 .menu-down{
-  overflow: auto;
+  flex-grow: 1;
+}
+
+.container-menu-down{
+  height: 60%;
+  overflow-y: auto;
 }
 
 .menu-options{
